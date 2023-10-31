@@ -2,7 +2,7 @@
 
 ![cs2fastdl](https://i.imgur.com/rHGCKo9.png)
 
-This is a proof of concept app and will be turned into something more user friendly for clients. The point of this is to nail the functionality first. Im aware of some other "solutions" out there but they're not well though out for different server setups, outright dangerous or gate-keepy.  
+This is a proof of concept app and will be turned into something more user friendly for clients. The point of this is to nail the functionality first. Im aware of some other "solutions" out there but they're not well thought out for different server setups, outright dangerous or gate-keepy.  
 
 CS2 FastDL is an app designed to streamline the downloading of custom content for Counter Strike 2. This will allow you to join servers with custom maps and models. It ensures that users only download the necessary updated files, saving time and bandwidth. The app comes with a simple graphical user interface (GUI) for ease of use. You can add any servers you want as long as they have a .txt with all the files they want you to download. (A list of current servers are here). Unlike other solutions, there is 0 risk of getting banned as this app runs entirely seperatly to the game. 
 
