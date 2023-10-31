@@ -8,11 +8,23 @@ CS2 FastDL is an app designed to streamline the downloading of custom content fo
 
 ## How It Works
 
-CS2 FastDL retrieves a list of file URLs from a specified `.txt` file hosted online. For each URL, the program checks if the corresponding file exists locally. If it does, the script compares the local and remote versions of the file. If the files differ, the script downloads the remote file, ensuring users always have the most up-to-date content.
+CS2 FastDL fixes some of the shortcomings from existing fastdl setups.  
+
+- Server owners only need to upload a `.txt` file with all the URLs they want a client to download. This means your FastDL server can still remain private and not get rate limited from requests.
+- As assets dont really change that much compared to maps, you can bundle all character models into a single `assets.zip` to make downloading to clients way faster. Most asset packs are only around 500mb to 1gb so this makes sense.
+- CS2 FastDL will read and store the timestamp of when the `.txt` was last updated, if it has changed it will trigger an update.
+- It DOESNT stay running in the background, all the maps are downloaded at once as not to interupt users gameplay. 
 
 ## Features
 
 - **Fast Downloads**: Only downloads files that don't exist locally or have updates on the server.
 - **Direct Play**: Launch CS2 with the required parameters for custom content.
+- **Any Platform**: It works with any platform or OS.
+- **Supports Multi Part Downloading**: Routing problems are no longer an issue and players should always get the fastest speed possible.
 - **Robust Error Handling**: Gracefully handles common network issues and skips invalid URLs, ensuring that the download process continues uninterrupted.
 - **User-Friendly Interface**: Provides a GUI that shows the download progress for each file, making it easy to track the status of each download.
+
+## TODO
+
+- **Companion Script**: Automatically prepare and upload files from your game server to your FastDL host or folder.
+- **Pretty GUI**: Make it so its extremly easy to use and navigate for the most noob players.
