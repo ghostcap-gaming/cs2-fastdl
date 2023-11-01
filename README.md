@@ -15,6 +15,18 @@ CS2 FastDL fixes some of the shortcomings from existing fastdl setups.
 - CS2 FastDL will read and store the timestamp of when the `.txt` was last updated, if it has changed it will trigger an update.
 - It DOESNT stay running in the background, all the maps are downloaded at once as not to interupt users gameplay. 
 
+## Usage
+
+Prepping your files and creating a downloads.txt file:
+1. Zip up all your character models directly in your cs2 root directory. This file should be called `assets.zip`. There should only be 1 folder inside this archive that extracts directly to the clients CS2 directory.
+2. Run `file-path-creator.py` (This will be an exe after testing).
+3. You should now have 2 new generated files called `downloads.txt` and `config.txt`. Edit `config.txt` to include the root folders you want to add. (eg. /models).
+4. Run `file-path-creator.py` again and check all the files are listed inside of `downloads.txt`.
+5. Upload these files to your http server. It should look like this:
+![cs2fastdl](https://i.imgur.com/m6QqA4J.png)
+
+*Note: You DON'T need to create an assets.zip file if you dont want to, this just makes the download process way faster for the client. It will work prefectly fine acting as an old school fastdl.
+
 ## Features
 
 - **Fast Downloads**: Only downloads files that don't exist locally or have updates on the server.
