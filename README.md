@@ -40,3 +40,13 @@ Prepping your files and creating a downloads.txt file:
 
 - **Companion Script**: Automatically prepare and upload files from your game server to your FastDL host or folder.
 - **Pretty GUI**: Make it so its extremly easy to use and navigate for the most noob players.
+
+## Known testing bugs
+
+- No matter if a file finishes downloading correctly, it will just say its failed. 
+- Multi part downloading is removed for now.
+- There is lots of left over test/garbage in the code, ill fix this eventually.
+- Windows filepaths are busted and wont save to the config.
+- Design is busted on Windows (proof of concept anyway).
+- It's not signed so will throw an error when launching on Windows.
+- Multiple server assets not handled.
